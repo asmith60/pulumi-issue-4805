@@ -103,6 +103,8 @@ class FooResourceProvider implements pulumi.dynamic.ResourceProvider {
 
         // Update logic goes here
 
+        console.log('PROVIDER UPDATED');
+
         return { outs: newInputs };
     }
 }
