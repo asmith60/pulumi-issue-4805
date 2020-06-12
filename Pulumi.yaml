@@ -1,0 +1,3 @@
+name: pulumi-issue-4805
+runtime: nodejs
+description: Demo repo for pulumi/pulumi issue 4805
