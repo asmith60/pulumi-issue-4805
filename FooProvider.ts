@@ -97,13 +97,13 @@ class FooResourceProvider implements pulumi.dynamic.ResourceProvider {
 
     async delete(id: string, props: DynamicProviderOutputs): Promise<void> {
         // Delete logic goes here
+
+        console.log('PROVIDER UPDATED AGAIN');
     }
 
     async update(id: string, currentOutputs: DynamicProviderOutputs, newInputs: DynamicProviderInputs): Promise<pulumi.dynamic.UpdateResult> {
 
         // Update logic goes here
-
-        console.log('PROVIDER UPDATED');
 
         return { outs: newInputs };
     }
